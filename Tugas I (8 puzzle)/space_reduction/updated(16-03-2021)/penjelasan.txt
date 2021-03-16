@@ -1,0 +1,9 @@
+	Kami melakukan percobaan, semisal 8 puzzle ini menggunakan memory di C++, kami menghitung jumlah 
+	memory yang terpakai jika kita menyimpan dalam bentuk array 1d, array 2d, dan juga stack, queue (library c++).
+
+	Dari percobaan ini kami mengetahui bahwa penyimpanan 1 state(9 int)
+		-Dengan menggunakan array 1d dan 2d menggunakan memory 36 byte atau mengambil memory 4 byte dalam setiap 1 int yang tersimpan.
+		- Dengan menggunakan stack/queue library c++ menggunaknan memory 20 byte atau sekitar 2.2 byte dalam setiap 1 int
+
+	Dalam penyelesaian 8 puzzle menggunakan metode A*, kita dapatkan 79 state. Jika kita menyimpan menggunakan array. 
+	Memory yang terpakai = 2.844 byte(79*36). Namun jika kita menggunakan stack/queue (library c++), memory yang terpakai = 1580 byte (79*20). Hal ini mereduksi memory sebesar 1264 byte.
